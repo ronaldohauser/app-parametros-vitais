@@ -32,10 +32,6 @@ Este aplicativo permite que os tutores de animais (cães e gatos) monitorem os p
 3. Insira 15 movimentos respiratórios em 15 segundos.
 4. O app calculará as frequências e exibirá os resultados.
 
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ---
 
 Desenvolvido por Ronaldo Hauser - 2025
