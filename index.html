@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medição de Frequência</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <p>Aviso! A utilização deste App deve ser feita com a supervisão de profissionais veterinários. Use com responsabilidade.</p>
+      <button onclick="fecharPopup()">Me responsabilizo</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Parâmetros Vitais</h1>
+
+    <label for="animal">Selecione o animal:</label>
+    <select id="animal">
+      <option value="cachorro">Cachorro</option>
+      <option value="gato">Gato</option>
+    </select>
+
+    <label for="batimentos">Batimentos cardíacos (15 segundos):</label>
+    <input type="number" id="batimentos" placeholder="Ex: 30" />
+
+    <label for="respiracoes">Movimentos respiratórios (15 segundos):</label>
+    <input type="number" id="respiracoes" placeholder="Ex: 15" />
+
+    <button onclick="calcularFrequencias()">Calcular</button>
+
+    <div class="result" id="resultadoCardiaco"></div>
+    <div class="result" id="resultadoRespiratorio"></div>
+
+    <div class="warning">Frequência cardíaca: <br>
+      Cães = 60 a 160 bpm <br>
+      Gatos = 120 a 240 bpm <br><br>
+      
+      Frequência respiratória: <br>
+      Cães = 18 a 36 mrpm <br>
+      Gatos = 20 a 240 mrpm
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
